@@ -32,10 +32,10 @@ namespace Weather
         // Получение текущей температуры
         private string GetTemperature(string html)
         {
-            string temperature = Regex.Match(html, 
-                @"<span data-testid=""TemperatureValue"" class=""CurrentConditions--tempValue--.*?"">(\W*\d+\W)</span>").Groups[1].Value;
+            string temperature = Regex.Match(html,
+                @"<span data-testid=""TemperatureValue"" class=""CurrentConditions--tempValue--.*?"">(\W*\d+).*?</span>").Groups[1].Value;
 
-            return temperature;
+            return $"{temperature}°";
         }
 
         // Получение текущего погодного статуса
