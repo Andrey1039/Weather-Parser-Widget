@@ -1,4 +1,4 @@
-﻿<Window x:Name="ProgramWindow" x:Class="Weather.MainWindow"
+<Window x:Name="ProgramWindow" x:Class="Weather.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -67,7 +67,7 @@
             <Border x:Name="WeatherInfo" Background="Transparent" CornerRadius="3">
                 <Canvas Visibility="Visible">
                     <Label x:Name="TempLabel" Foreground="{Binding Path=TempLabel.Color}" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="78" Canvas.Left="87" Content="&#xD;&#xA;" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="32" FontFamily="Times New Roman" Canvas.Top="-4" FontWeight="Bold"/>
-                    <Label x:Name="StatusLabel" Foreground="{Binding Path=StatusLabel.Color}" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="28" Width="165" Height="24" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="13">
+                    <Label x:Name="StatusLabel" Foreground="{Binding Path=StatusLabel.Color}" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="31" Width="165" Height="24" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="13">
                         <TextBlock x:Name="StatusTB" TextTrimming="CharacterEllipsis" VerticalAlignment="Top" Text=""/>
                     </Label>
                     <Label x:Name="CityLabel" Foreground="{Binding Path=CityLabel.Color}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="165" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Canvas.Top="47" FontFamily="Times New Roman" FontSize="13" Height="24" RenderTransformOrigin="0.5,0.5">
